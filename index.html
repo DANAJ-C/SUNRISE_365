@@ -41,7 +41,7 @@
   #intro.hidden { transform:scale(1.04); }
   .in-title { position:absolute; left:0; right:0; top:var(--ty,15%); text-align:center; transform:rotate(-3deg); }
   .in-title h1 { margin:0; font-size:50px; line-height:1.05; font-weight:400; letter-spacing:-1px; white-space:nowrap; }
-  .in-title h1 span { display:inline-block; margin:0 4px; color:#fff; text-shadow:3.00px 0.00px 0 #2b2540, 2.77px 1.15px 0 #2b2540, 2.12px 2.12px 0 #2b2540, 1.15px 2.77px 0 #2b2540, 0.00px 3.00px 0 #2b2540, -1.15px 2.77px 0 #2b2540, -2.12px 2.12px 0 #2b2540, -2.77px 1.15px 0 #2b2540, -3.00px 0.00px 0 #2b2540, -2.77px -1.15px 0 #2b2540, -2.12px -2.12px 0 #2b2540, -1.15px -2.77px 0 #2b2540, -0.00px -3.00px 0 #2b2540, 1.15px -2.77px 0 #2b2540, 2.12px -2.12px 0 #2b2540, 2.77px -1.15px 0 #2b2540, 2px 4px 0 #2b2540, 3px 5px 0 #2b2540; }
+  .in-title h1 span { display:inline-block; margin:0 4px; color:#fff; text-shadow:3.00px 0.00px 0 #2b2540, 2.77px 1.15px 0 #2b2540, 2.12px 2.12px 0 #2b2540, 1.15px 2.77px 0 #2b2540, 0.00px 3.00px 0 #2b2540, -1.15px 2.77px 0 #2b2540, -2.12px 2.12px 0 #2b2540, -2.77px 1.15px 0 #2b2540, -3.00px 0.00px 0 #2b2540, -2.77px -1.15px 0 #2b2540, -2.12px -2.12px 0 #2b2540, -1.15px -2.77px 0 #2b2540, -0.00px -3.00px 0 #2b2540, 1.15px -2.77px 0 #2b2540, 2.12px -2.12px 0 #2b2540, 2.77px -1.15px 0 #2b2540; }
   .in-title h1 span:nth-child(1){color:#ffb3d1; transform:rotate(-6deg) translateY(2px);} .in-title h1 span:nth-child(2){color:#ffe08a; transform:rotate(4deg) translateY(-4px);}
   .in-title h1 span:nth-child(3){color:#b8e6ff; transform:rotate(-3deg);} .in-title h1 span:nth-child(4){color:#fff; transform:rotate(5deg) translateY(-3px);}
   .in-title h1 span:nth-child(5){color:#d9c2ff; transform:rotate(-5deg) translateY(3px);} .in-title h1 span:nth-child(6){color:#ffc9a8; transform:rotate(3deg) translateY(-2px);} .in-title h1 span:nth-child(7){color:#c9f0a0; transform:rotate(-4deg) translateY(2px);}
@@ -64,21 +64,26 @@
   .in-login button:active { background:#f0f0f0; }
   .in-stk { position:absolute; left:12px; top:calc(var(--ty,15%) - 38px); width:114px; height:52px; border-radius:50%; transform:rotate(-22deg); background:#d4303d; display:flex; align-items:center; justify-content:center; pointer-events:none; }
   .in-stk span { font-family:"Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",sans-serif; font-size:21px; font-weight:800; color:#fff; letter-spacing:-.5px; transform:rotate(2deg); }
-  .in-sA { position:absolute; right:15px; top:calc(var(--ty,15%) - 69px); width:176px; transform:rotate(9deg); pointer-events:none; filter:drop-shadow(0 1px 2px rgba(0,0,0,.12)); }
+  .in-sA { position:absolute; right:15px; top:calc(var(--ty,15%) - var(--sa,69px)); width:176px; transform:rotate(9deg); pointer-events:none; filter:drop-shadow(0 1px 2px rgba(0,0,0,.12)); }
   .in-sA img { display:block; width:100%; }
   .in-sB { position:absolute; left:4px; top:calc(var(--ty,15%) + var(--sb,114px)); width:138px; height:58px; transform:rotate(-4deg); pointer-events:none; background:radial-gradient(ellipse closest-side,#fff53d 0%,#fff53d 52%,rgba(255,245,61,0) 100%); }
   .in-sB img { position:absolute; left:50%; top:50%; width:76px; transform:translate(-50%,-50%) rotate(8deg); }
   .in-sC { position:absolute; right:-21px; top:60px; width:74px; height:31px; transform:rotate(-12deg); pointer-events:none; filter:drop-shadow(0 1px 2px rgba(0,0,0,.12)); }
   /* 화면 높이가 낮은 폰에서는 간격과 글자를 줄여서 입장 버튼까지 다 보이게 해요 (JS가 단계를 고름) */
-  #intro[data-t="1"] { --ty:11%; --sb:96px; }
-  #intro[data-t="1"] .in-sub { width:150px; height:62px; margin-top:8px; } #intro[data-t="1"] .in-sub b { font-size:15px; }
-  #intro[data-t="1"] .in-box { padding:14px 18px 7px; } #intro[data-t="1"] .in-txt { font-size:13.5px; line-height:1.5; margin-bottom:8px; }
+  #intro[data-t="1"] { --ty:15%; --sb:104px; --sa:62px; }
+  #intro[data-t="1"] .in-sub { width:156px; height:64px; margin-top:6px; } #intro[data-t="1"] .in-sub b { font-size:15.5px; }
+  #intro[data-t="1"] .in-box { padding:13px 17px 7px; } #intro[data-t="1"] .in-txt { font-size:13.5px; line-height:1.46; margin-bottom:6px; }
   #intro[data-t="1"] .in-login { gap:9px; } #intro[data-t="1"] .in-login input { height:42px; } #intro[data-t="1"] .in-login button { height:40px; }
-  #intro[data-t="2"] { --ty:7%; --sb:82px; }
-  #intro[data-t="2"] .in-title h1 { font-size:42px; }
-  #intro[data-t="2"] .in-sub { width:128px; height:54px; margin-top:4px; } #intro[data-t="2"] .in-sub b { font-size:13.5px; }
-  #intro[data-t="2"] .in-box { padding:11px 16px 5px; } #intro[data-t="2"] .in-txt { font-size:12.5px; line-height:1.42; margin-bottom:5px; }
+  #intro[data-t="2"] { --ty:15%; --sb:94px; --sa:58px; }
+  #intro[data-t="2"] .in-title h1 { font-size:46px; }
+  #intro[data-t="2"] .in-sub { width:140px; height:58px; margin-top:4px; } #intro[data-t="2"] .in-sub b { font-size:14.5px; }
+  #intro[data-t="2"] .in-box { padding:11px 15px 5px; } #intro[data-t="2"] .in-txt { font-size:12.8px; line-height:1.4; margin-bottom:5px; }
   #intro[data-t="2"] .in-login { gap:7px; } #intro[data-t="2"] .in-login input { height:38px; } #intro[data-t="2"] .in-login button { height:36px; }
+  #intro[data-t="3"] { --ty:15%; --sb:80px; --sa:52px; }
+  #intro[data-t="3"] .in-title h1 { font-size:40px; }
+  #intro[data-t="3"] .in-sub { width:124px; height:52px; margin-top:2px; } #intro[data-t="3"] .in-sub b { font-size:13px; }
+  #intro[data-t="3"] .in-box { padding:9px 13px 4px; } #intro[data-t="3"] .in-txt { font-size:12px; line-height:1.34; margin-bottom:4px; }
+  #intro[data-t="3"] .in-login { gap:6px; } #intro[data-t="3"] .in-login input { height:36px; } #intro[data-t="3"] .in-login button { height:34px; }
   .in-deco { position:absolute; pointer-events:none; }
   .in-tape { position:absolute; width:78px; height:24px; background:rgba(255,160,200,.7); border-left:2px dashed rgba(255,255,255,.75); border-right:2px dashed rgba(255,255,255,.75); }
   /* ===== 1. 잠금화면 ===== */
@@ -1144,21 +1149,22 @@
     const txt = document.getElementById("in-txt"), num = document.getElementById("in-pg");
     const draw = () => { txt.textContent = PAGES[pg]; num.textContent = "(" + (pg + 1) + " / " + PAGES.length + ")"; };
     // 2장(가장 긴 칸)의 윗선이 훔쳐보기 라벨 아래 일정 간격에 오도록, 기준선(가운데 높이)을 계산해요
-    const box = document.getElementById("in-box"), intro = document.getElementById("intro"), GAPS = [45, 28, 16];
+    const box = document.getElementById("in-box"), intro = document.getElementById("intro"), GAPS = [45, 26, 20, 14];
     const spacer = document.createElement("div"); spacer.style.cssText = "position:absolute;left:0;top:0;width:1px;height:1px;pointer-events:none"; intro.appendChild(spacer);
     const place = () => {
       const keep = pg, op = txt.style.opacity, login = document.getElementById("in-login");
       box.style.transition = "none";
-      for (let lv = 0; lv < 3; lv++) {            // 화면이 낮으면 한 단계씩 더 촘촘하게
+      for (let lv = 0; lv < 4; lv++) {            // 화면이 낮으면 한 단계씩 더 촘촘하게
         intro.dataset.t = lv; pg = 1; draw();
         const h2 = box.offsetHeight, ir = intro.getBoundingClientRect(), sr = document.querySelector(".in-sub").getBoundingClientRect();
-        const t2 = sr.bottom - ir.top + GAPS[lv];
+        const sbR = document.querySelector(".in-sB").getBoundingClientRect();
+        const t2 = lv === 0 ? sr.bottom - ir.top + GAPS[0] : Math.max(sr.bottom - ir.top + GAPS[lv], sbR.bottom - ir.top + 15);   // 별 스티커와도 간격 확보
         box.style.top = Math.round(t2 + h2 / 2) + "px";
         login.style.top = Math.round(t2 + h2 + 14) + "px";
         const bottom = login.offsetTop + login.offsetHeight;
         spacer.style.top = (bottom + 18) + "px";
         if (bottom + 14 <= ir.height) { intro.style.overflowY = "hidden"; break; }
-        if (lv === 2) intro.style.overflowY = "auto";   // 그래도 모자라면 위아래로 밀어서 볼 수 있게
+        if (lv === 3) intro.style.overflowY = "auto";   // 그래도 모자라면 위아래로 밀어서 볼 수 있게
       }
       pg = keep; draw(); txt.style.opacity = op;
     };
